@@ -4,7 +4,7 @@ vim-simplepath
 
 # Insatall
 
-	1.下载`simplepath.vim`
+	1. 下载 [simplepath.vim](https://raw.github.com/StoneRen/simplepath/master/simplepath.vim)
 	2. 拷贝`simplepath.vim`到你的Vim/plugin下
 
 # Command
@@ -21,3 +21,7 @@ vim-simplepath
 - OPR
 
 	`:OPR` 把当前目录及其下一级子目录和文件写在列表中
+
+# 测试环境
+- win7 gvim `OK`
+- mac10.8.5 macvim `OK`
