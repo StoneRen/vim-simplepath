@@ -153,10 +153,8 @@ function! s:Pro_Cmd(pat)
 
 	let m = filter(copy(s:Pro_Dirs), 'stridx(v:val, a:pat) != -1')
 	if len(m) > 0
-		if len(m) == 1
-			execute "tabnew ".m[0]
-			return
-		endif
+		execute "tabnew ".m[0]
+		return
 	else
 		echo '没有匹配的结果'
 	endif
@@ -170,6 +168,5 @@ command! -nargs=? -complete=customlist,s:Pro_Complete OP
 
 command! OPC call s:Pro_Create_path(<q-args>)
 command! OPR call s:Pro_Create_path("y")
-command! OPO call s:Pro_Open_List()
 " }}}
 
